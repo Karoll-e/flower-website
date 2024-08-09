@@ -1,0 +1,269 @@
+:root {
+  --backgound-color: rgba(246, 246, 246, 1);
+  --dark-green: rgba(34, 48, 8, 1);
+  --dark-pink: rgba(207, 111, 138, 1);
+  --medium-green: rgba(45, 64, 11, 0.75);
+  --light-green: rgb(147, 152, 139);
+  --light-pink: rgba(233, 223, 225, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(246, 246, 246, 1);
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+section{
+    padding: 0rem 9%;
+    padding-bottom: 9rem;
+}
+
+.heading{
+  text-align: center;
+  font-size: 4rem;
+  color:var(--dark-green);
+  padding: 1rem;
+  margin: 2rem 0;
+}
+
+.heading span{
+  color:var(--dark-pink);
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: var(--dark-green);
+    color: var(--backgound-color);
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: var(--medium-green);
+}
+
+header {
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(246, 246, 246, 1);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  text-transform: capitalize;
+  /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); !>>*/
+}
+
+header .logo {
+  font-size: 3rem;
+  color: rgba(34, 48, 8, 1);
+  font-weight: 600;
+}
+
+header .logo span {
+  color: var(--dark-pink);
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: var(--medium-green);
+}
+
+header .navbar a:hover {
+  color: var(--dark-pink);
+}
+
+header .icons a {
+  font-size: 2.5rem;
+  color: var(--dark-green);
+  margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+  color: var(--dark-pink);
+}
+
+header #toggler {
+  display: none;
+}
+
+header .bar-icon {
+  font-size: 3rem;
+  color: var(--dark-green);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem none rgb(0, 0, 0, 0.1);
+  display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../assets/home-image2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color:var(--dark-green)
+}
+
+.home .content span{
+    font-size: 3rem;
+    color:var(--dark-pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color:var(--light-green);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.about .row{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+  flex: 1 1 40rem;
+  position: relative;
+}
+
+.about .row .video-container video{
+  width: 100%;
+  border: 1.5rem none var(--backgound-color);
+  border-radius: .5rem;
+  height: 100%;
+  object-fit: cover;
+}
+.about .row .video-container h3{
+  position: absolute;
+  top: 50%; transform: translateY(-50%);
+  font-size: 3rem;
+  background: var(--backgound-color);
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.about .row .content{
+  flex: 1 1 40rem;
+  padding-bottom: 2rem;
+}
+
+.about .row .content h3{
+  font-size: 3rem;
+  color:var(--dark-green);
+}
+
+.about .row .content p{
+  font-size: 1.5rem;
+  color:var(--light-green);
+  padding: .5rem 0;
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+
+
+
+
+/* media queries*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+
+  .home{
+    background-position: left;
+  }
+}
+
+@media (max-width: 768px) {
+  header .bar-icon {
+    display: block;
+  }
+
+  header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--backgound-color);
+    border-top: 0.1rem solid rgb(0, 0, 0, 0.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  header #toggler:checked ~ .navbar {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  header .navbar a {
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background: var(--backgound-color);
+    display: block;
+  }
+
+  .home .content h3{
+    font-size: 5rem;
+  }
+
+  .home .content span{
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .heading{
+    font-size: 3rem;
+  }
+}
