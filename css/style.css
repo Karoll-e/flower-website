@@ -27,7 +27,7 @@ html {
 }
 
 section{
-    padding: 0rem 9%;
+    padding: 2rem 9%;
     padding-bottom: 9rem;
 }
 
@@ -60,7 +60,7 @@ section{
 }
 
 header {
-  /* position: fixed; */
+  position: fixed; 
   top: 0;
   left: 0;
   right: 0;
@@ -122,7 +122,7 @@ header .bar-icon {
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(../assets/home-image2.png) no-repeat;
+    background: url(../assets/home-image.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
