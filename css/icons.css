@@ -1,0 +1,34 @@
+.icons-container {
+  background: var(--backgound-color);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.icons-container .icons {
+  background: var(--backgound-color);
+  /*border: 1rem solid rgba(0,0,0,0.1);*/
+  padding: 2rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  flex: 1 1 25rem;
+}
+
+.icons-container .material-symbols-rounded {
+  font-size: 55px;
+  color: var(--dark-green);
+}
+
+.icons-container h3 {
+  color: var(--dark-green);
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.icons-container span {
+  color: var(--light-green);
+  font-size: 1.3rem;
+}

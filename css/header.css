@@ -1,0 +1,58 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(246, 246, 246, 1);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  text-transform: capitalize;
+  /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); !>>*/
+}
+
+header .logo {
+  font-size: 3rem;
+  color: rgba(34, 48, 8, 1);
+  font-weight: 600;
+}
+
+header .logo span {
+  color: var(--dark-pink);
+}
+
+header .navbar a {
+  font-size: 2rem;
+  padding: 0 1.5rem;
+  color: var(--medium-green);
+}
+
+header .navbar a:hover {
+  color: var(--dark-pink);
+}
+
+header .icons a {
+  font-size: 2.5rem;
+  color: var(--dark-green);
+  margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+  color: var(--dark-pink);
+}
+
+header #toggler {
+  display: none;
+}
+
+header .bar-icon {
+  font-size: 3rem;
+  color: var(--dark-green);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  border: 0.1rem none rgb(0, 0, 0, 0.1);
+  display: none;
+}
