@@ -322,47 +322,47 @@ header .bar-icon {
   text-decoration: line-through;
 }
 
-.review .box-container{
+.review .box-container {
   display: flex;
   flex-wrap: wrap;
-  gap:1.5rem;
+  gap: 1.5rem;
 }
 
-.review .box-container .box{
+.review .box-container .box {
   flex: 1 1 30rem;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, .1);
-  border-radius: .5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
   padding: 3rem 2rem;
   position: relative;
 }
 
-.review .box-container .box .quote-icon{
+.review .box-container .box .quote-icon {
   position: absolute;
-  bottom: 3rem; right: 3rem;
+  bottom: 3rem;
+  right: 3rem;
   font-size: 6rem;
   color: var(--light-pink);
 }
 
-.review .box-container .box .stars i{
+.review .box-container .box .stars i {
   color: var(--dark-pink);
   font-size: 2rem;
 }
 
-.review .box-container .box p{
+.review .box-container .box p {
   color: var(--dark-green);
   font-size: 1.5rem;
   line-height: 1.5;
   padding-top: 2rem;
 }
 
-
-.review .box-container .box .user{
+.review .box-container .box .user {
   display: flex;
   align-items: center;
   padding-top: 2rem;
 }
 
-.review .box-container .box .user img{
+.review .box-container .box .user img {
   height: 6rem;
   width: 6rem;
   border-radius: 50%;
@@ -370,15 +370,65 @@ header .bar-icon {
   margin-right: 1rem;
 }
 
-.review .box-container .box .user h3{
+.review .box-container .box .user h3 {
   font-size: 2rem;
   color: var(--dark-green);
 }
 
-.review .box-container .box .user span{
+.review .box-container .box .user span {
   font-size: 1.5rem;
   color: var(--light-green);
 }
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contact .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem none rgba(0, 0, 0, 0.1);
+}
+
+.contact .row .image {
+  flex: 1 1 40rem;
+  background-repeat: repeat-y;
+}
+
+.contact .row .image img {
+  width: 100%;
+}
+
+.contact .row form .box {
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: var(--dark-green);
+  text-transform: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  margin: 0.7rem 0;
+  width: 100%;
+}
+
+.contact .row form .box:focus {
+  border-color: var(--dark-pink);
+}
+
+.contact .row form textarea {
+  height: 12rem;
+  resize: none;
+}
+
+
+
+
+
+
+
 
 
 
