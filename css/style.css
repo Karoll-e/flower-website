@@ -1,5 +1,4 @@
 /* imports css files*/
-
 @import url("header.css");
 @import url("home.css");
 @import url("about.css");
@@ -10,6 +9,7 @@
 @import url("footer.css");
 @import url("media-queries.css");
 
+/* colors variables */
 :root {
   --backgound-color: rgba(246, 246, 246, 1);
   --dark-green: rgba(34, 48, 8, 1);
@@ -25,7 +25,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: rgba(246, 246, 246, 1);
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Roboto", "Helvetica Neue", "Arial", sans-serif;
   outline: none;
   border: none;
   text-decoration: none;
